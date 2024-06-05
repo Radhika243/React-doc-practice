@@ -54,6 +54,7 @@ function LoginForm2(){
                 value={values.lastName}
                 onChange={handleLastName}
                 />
+                <br />
                 {submitted && !values.lastName ? <span className="btn btn-danger">Please enter the last name</span>:null}
                 </div>
                 <br />
@@ -65,6 +66,7 @@ function LoginForm2(){
                 value={values.email}
                 onChange={handleEmail}
                 />
+                <br />
                 {submitted && !values.email ? <span className="btn btn-danger">Please enter the email</span>:null}
                </div>
                <button onClick={handleSubmit}>Submit</button>
